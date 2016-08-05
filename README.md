@@ -16,6 +16,18 @@
 ##Getting Started
 1.Install mongodb
 
+   - **Ubuntu 16.04**
+     
+     ```
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+        
+	echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list        
+        sudo apt-get update
+        
+        sudo apt-get install -y mongodb-org
+     ```
+        check for `/data/db` directory , If not found create using `sudo mkdir -p /data/db` and change the owner if needed using sudo chown `USERNAME` /data/db
+
    - **Ubuntu**
      
      ```
